@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-FoursquareDemo/Alamofire.framework"
+  install_framework "Pods-FoursquareDemo/Realm.framework"
+  install_framework "Pods-FoursquareDemo/RealmSwift.framework"
   install_framework "Pods-FoursquareDemo/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-FoursquareDemo/Alamofire.framework"
+  install_framework "Pods-FoursquareDemo/Realm.framework"
+  install_framework "Pods-FoursquareDemo/RealmSwift.framework"
   install_framework "Pods-FoursquareDemo/SwiftyJSON.framework"
 fi
