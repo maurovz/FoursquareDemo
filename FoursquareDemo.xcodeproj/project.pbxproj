@@ -14,6 +14,9 @@
 		78B86EF21C580D56003EF89F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B86EF11C580D56003EF89F /* HomeViewController.swift */; };
 		78B86EF41C58466D003EF89F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B86EF31C58466D003EF89F /* HomeTableViewCell.swift */; };
 		78B86EF61C584B9E003EF89F /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B86EF51C584B9E003EF89F /* VenueDetailViewController.swift */; };
+		78B86EF81C5883C5003EF89F /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B86EF71C5883C5003EF89F /* Venue.swift */; };
+		78B86F021C59185C003EF89F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B86F011C59185C003EF89F /* FavoritesViewController.swift */; };
+		78B86F041C591866003EF89F /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B86F031C591866003EF89F /* FavoriteDetailViewController.swift */; };
 		B1AF2424DC19FCE44ADE8782 /* Pods_FoursquareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3435EF2FA032C4EB3A543B /* Pods_FoursquareDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		78B86EF11C580D56003EF89F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		78B86EF31C58466D003EF89F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		78B86EF51C584B9E003EF89F /* VenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+		78B86EF71C5883C5003EF89F /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		78B86F011C59185C003EF89F /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		78B86F031C591866003EF89F /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		9F3435EF2FA032C4EB3A543B /* Pods_FoursquareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA634236888B9C2FD4BF96AD /* Pods-FoursquareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoursquareDemo/Pods-FoursquareDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,16 +80,51 @@
 		78B86EDE1C580A2D003EF89F /* FoursquareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				78B86EF91C5916EB003EF89F /* Controllers */,
+				78B86EFC1C591745003EF89F /* Storyboard */,
+				78B86EFB1C591738003EF89F /* Supporting Files */,
+				78B86EFA1C5916FD003EF89F /* Realm */,
 				78B86EDF1C580A2D003EF89F /* AppDelegate.swift */,
-				78B86EE31C580A2D003EF89F /* Main.storyboard */,
 				78B86EE61C580A2D003EF89F /* Assets.xcassets */,
-				78B86EE81C580A2D003EF89F /* LaunchScreen.storyboard */,
-				78B86EEB1C580A2D003EF89F /* Info.plist */,
 				78B86EF31C58466D003EF89F /* HomeTableViewCell.swift */,
-				78B86EF11C580D56003EF89F /* HomeViewController.swift */,
-				78B86EF51C584B9E003EF89F /* VenueDetailViewController.swift */,
 			);
 			path = FoursquareDemo;
+			sourceTree = "<group>";
+		};
+		78B86EF91C5916EB003EF89F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78B86EF11C580D56003EF89F /* HomeViewController.swift */,
+				78B86EF51C584B9E003EF89F /* VenueDetailViewController.swift */,
+				78B86F011C59185C003EF89F /* FavoritesViewController.swift */,
+				78B86F031C591866003EF89F /* FavoriteDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		78B86EFA1C5916FD003EF89F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				78B86EF71C5883C5003EF89F /* Venue.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		78B86EFB1C591738003EF89F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78B86EEB1C580A2D003EF89F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78B86EFC1C591745003EF89F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				78B86EE31C580A2D003EF89F /* Main.storyboard */,
+				78B86EE81C580A2D003EF89F /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		E0D551BDB36E9A95FA20C8D3 /* Frameworks */ = {
@@ -217,8 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B86EF41C58466D003EF89F /* HomeTableViewCell.swift in Sources */,
+				78B86F041C591866003EF89F /* FavoriteDetailViewController.swift in Sources */,
+				78B86EF81C5883C5003EF89F /* Venue.swift in Sources */,
 				78B86EE01C580A2D003EF89F /* AppDelegate.swift in Sources */,
 				78B86EF21C580D56003EF89F /* HomeViewController.swift in Sources */,
+				78B86F021C59185C003EF89F /* FavoritesViewController.swift in Sources */,
 				78B86EF61C584B9E003EF89F /* VenueDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
